@@ -1,0 +1,38 @@
+{
+    "listen_on" : {
+        "interface" : "eth0",
+        "port" : 80,
+        "reroute": false
+    },
+    "api": {
+        "active": true,
+        "sensors": true,
+        "lights": true,
+        "sampling" : true
+    },
+    "serve_static": true,
+    "static_path" : "html",
+    "stream" : true,
+
+    "database" : {
+        "host": "localhost",
+        "user": "smartroom",
+        "password": "bar",
+        "db": "room_data",
+        "port": 3306
+    },
+
+    "discord" : {
+        "enabled" : true,
+        "token" : "TOKEN HERE",
+        "key" : "!key",
+        "pignable" : true
+    },
+
+    "perms" : {
+        "admin" : [
+            123955881116172288,
+            181204250024607744
+        ]
+    }
+}
